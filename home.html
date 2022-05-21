@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    
+    
+    <title>Brejart Cerveja é Arte</title>
+
+    <link rel="stylesheet"href="estilo.css">
+    
+   
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img src="img/logo.jpg" width="70"><font size="1"> Projeto integrador: Desenvolvimento de Sistema</font></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html" >Pitch</a></li>
+                <li><a href="https://xd.adobe.com/view/d374252b-7338-45a4-bec7-17d07f8b703a-8627/" target="_blank">Protótipo UX/UI Brejart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <script src="mobile-navbar.js"></script>
+
+<div id="menu">
+
+    <BR><BR><BR>
+           
+        <h2>Sumário</h2> <BR>
+     
+ 
+        <li><a href="#introducao" style="color:black"><b>1 - INTRODUÇÃO</b></a></li><BR>
+         
+         <li><a href="#metodologia" style="color:black"><b>2 – MÉTODOLOGIA</b></a></li><BR>
+             
+         <li><a href="#visao" style="color:black"><b>2.1 – Visão Geral. (UX Design)</b></a></li><BR>
+
+         <li><a href="#desenvolvimento" style="color:black"><b>3 - DESENVOLVIMENTO</b></a></li><BR>
+         
+         <li><a href="#arquitetura" style="color:black"><b>3.1 - Arquitetura do aplicativo</b></a></li><BR>
+         
+         <li><a href="#Funcionalidade"style="color:black"><b>3.2 - Funcionalidade</b></a></li><BR>
+
+         <li><a href="#cores"style="color:black"><b>3.3 - Psicologia das cores</b></a></li></center><BR>
+
+         <li><a href="#Tela"style="color:black"><b>3.4 - Tela e módulos (UI Design)</b></a></li><BR>
+ 
+         <li><a href="#Fluxograma"style="color:black"><b>4 - Fluxograma de atividade</b></a></li><BR>    
+           
+         <li><a href="#Conclusão"style="color:black"><b>5 - Conclusão</b></a></li><BR>
+
+         <li><a href="#referencia"style="color:black"><b>Referência</b></a></li><BR>
+   
+            <p><center> <img src="img/artesanal.jpg" alt="HTML5 Icon" style=" align:center; width:300px; height:150px;"></center></p>   
+</div>
+
+    <div id="principal">
+        
+               
+        <h1>BREJART: DESENVOLVIMENTO DE UM APLICATIVO<BR> VOLTADO AO MERCADO DE CERVEJAS ARTESANAIS</h1><BR>
+
+            <p style="margin-left:9px; margin-right:9px; text-align: center">
+                Felippe S. GARCIA, Gabriel N. SILVA, Orientador: Professora Sirley Ambrosia Vitorio Oliveira<br>
+                felippe1z@estudante.unisa.br, gnasciment1z@estudante.unisa.br, saoliveira@prof.unisa.br.<BR><BR>
+
+           Universidade de Santo Amaro - UNISA, São Paulo, SP</p><BR><BR>
+            
+            
+            
+          
+         
+
+        <p>
+           <b>RESUMO.</b> O presente trabalho apresenta a proposta de desenvolvimento de um aplicativo
+           web e posteriormente dispositivos móveis para venda de cerveja artesanal baseado no modelo
+           delivery e marketplace. Será avaliada a experiência do usuário design UX/UI quanto ao uso
+           de aplicativos do gênero, e através de um estudo quantitativo apresentando estatísticas que
+           fundamentam o desenvolvimento da proposta. O aplicativo apresenta características que buscam
+           maximizar as vendas e o amplo cardápio de cervejas artesanais, onde podemos encontrar as mais
+           diversas marcas, sabores e tipos. Também entre os pilares de diferenciais do app, podemos dar
+           ênfase à análise personalizada e especializada de sommeliers, onde os mesmos deixam sua
+           avaliação em cada cerveja do cardápio, assim auxiliando os clientes que estão adentrando no
+           mundo da cerveja artesanal. </p> <br>
+
+        <p >
+           <b>Palavras chaves:</b> Aplicativos web, Desenvolvimento de software, Marketplace, Cerveja Artesanal, Delivery, Brejart.</p><BR>
+
+            <p>
+                <b>ABSTRACT.</b> The work presents a proposal for the development of a web application and
+                later mobile devices for the sale of craft beer based on the delivery and marketplace model.
+                From a user design project analysis study, and through a development project analysis study. 
+                The application has features that seek to maximize sales and the wide menu of craft beers,
+                where we can find the most diverse, flavors and types. We can also emphasize personalized
+                and specialized analysis in sommeliers, where they can be evaluated on each craft beer, as
+                well as assisting customers who are entering the art world..</p><br>
+             
+            <p>
+                <b>Keywords:</b> Web Apps, Software Development, Marketplace, Craft Beer, Delivery, Brejart.</p><br><br><br>
+
+
+
+
+            <h4 id="introducao">1 - INTRODUÇÃO</h4><br>
+
+            <p>
+                &emsp;Em tempos de pandemia da Covid 19 [1], muitos setores do comércio varejista foram afetados
+                pelas diversas restrições impostas como forma de conter o avanço da doença. Bares e restaurantes,
+                principalmente, tiveram que se reinventar para continuarem a atender o público[2]. O expressivo
+                crescimento do mercado de comércio eletrônico, foi o principal motivador de uma acelerada mudança
+                de paradigma do que poderíamos denominar também de "revolução comercial". Esta revolução acelerou
+                o crescimento do setor de desenvolvimento de aplicações para dispositivos móveis, criando soluções
+                personalizadas para o comércio dos mais diversos tipos de produtos e serviços.<br>
+                &emsp;O mercado de delivery impulsionado pelas restrições sanitárias demandou o desenvolvimento de
+                aplicativos personalizados para venda dos mais diversos produtos, em especial do setor de alimentos
+                e bebidas. Alguns aplicativos como o iFood [3] e a Rappi [4] se destacaram devido a sua grande
+                variedade de opções para restaurantes,  permitindo que em poucos cliques qualquer usuário pudessem
+                realizar todas as suas compras e as receberem na porta de sua casa de maneira simples e rápida.
+                Outros aplicativos se inserem no setor de delivery com grande destaque, como é o caso do
+                Uber Eats [5], aplicativo que resulta do app de mobilidade (Uber) e integra algumas das suas
+                principais funcionalidades, se destacando o rastreamento do pedido e do entregador.  Um outro
+                aplicativo interessante, porém, pouco conhecido é o Zé Delivery [6], diferente de outros aplicativos
+                já mencionados, este app tem como foco a oferecer um cardápio bastante variado de bebidas alcoólicas
+                para os seus clientes.</p><br>
+
+               <p> &emsp;Atualmente existe um número expressivo de aplicativos semelhantes com diversas funcionalidades.
+                   Então, como escolher o melhor aplicativo e quais as vantagens? Na tabela 1 é apresentado um
+                   levantamento dos aplicativos para vendas por delivery disponíveis em São Paulo e mais acessados do
+                   mercado. Uma análise comparativa é realizada sobre as principais características com o intuito de
+                   identificar novas funcionalidades para o aplicativo objeto deste trabalho.
+                </p><br><br>
+
+
+
+
+            <table border="1px"  cellspacing="2"  style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">
+
+                <caption> Tabela 1: Aplicativos mais acessados e funcionalidades</caption>
+
+                <tr > 
+                    <th> Apps/Funções</th> <th> Entregas </th> <th> Rastreio tempo real </th>  <th> Web </th> <th> Artesanal </th> <th> CX Analysis </th> <th> Cadastro </th><th> Local Físico </th><th> Pgtos </th><th> Cupons </th><th> Cliente Fiel</th>
+                </tr>
+
+                <tr > 
+                    <th > Brejart </th> <td> &#10004 </td> <td> &#10004 </td> <td> &#10004 </td> <td> &#10004 </td> <td> &#10004 </td> <td> &#10004 </td> <td> &#10005 </td> <td> &#10004 </td><td> &#10004 </td><td> &#10004 </td>
+                </tr>
+                
+                <tr > 
+                    <th> Uber Eats </th> <td> &#10004 </td> <td> &#10005</td> <td> &#10004</td> <td> &#10005</td> <td> &#10004 </td> <td> &#10004 </td> <td> &#10004 </td> <td> &#10005 </td><td> &#10004 </td><td> &#10005 </td>
+                </tr>
+                
+                <tr >
+                     <th> Ifood </th> <td> &#10004 </td> <td> &#10005 </td> <td> &#10004</td> <td> &#10005</td> <td> &#10004</td> <td> &#10004</td> <td> &#10004</td> <td> &#10004</td><td> &#10004</td><td> &#10004</td>                     
+                </tr>
+
+                <tr >
+                    <th> Rappi </th> <td> &#10004 </td> <td> &#10005 </td> <td> &#10004</td> <td> &#10005</td> <td> &#10005</td> <td> &#10004</td> <td> &#10004</td> <td> &#10004</td><td> &#10004</td><td> &#10005</td>                     
+               </tr>
+
+               <tr >
+                <th> Zé Delivery </th> <td> &#10004 </td> <td> &#10004 </td> <td> &#10004</td> <td> &#10005</td> <td> &#10004</td> <td> &#10004</td> <td> &#10004</td> <td> &#10004</td> <td> &#10004</td><td> &#10005</td>                    
+               </tr>
+               <tr >
+                <th> Saideira Brasil </th> <td> &#10004 </td> <td> &#10005 </td> <td> &#10004</td> <td> &#10005</td> <td> &#10005</td> <td> &#10004</td> <td> &#10005</td> <td> &#10004</td> <td> &#10005</td><td> &#10005</td>                    
+               </tr>                        
+               <CAPTION align="bottom">Fonte: Autores (2021)</CAPTION>
+            </table><br><br>
+
+            <p> &emsp;O presente trabalho apresenta a proposta de desenvolvimento do aplicativo Brejart, voltado
+                para o mercado de cervejas artesanais através do serviço de delivery. O Novo modelo de aplicação
+                se destaca dos existentes no mercado, pela sua facilidade de uso, opções intuitivas e funções de
+                rastreamento de pedidos e históricos de compra, possibilidade de incluir catálogos com uma maior
+                variedade de rótulos em relação aos aplicativos concorrentes, visto que é exclusivo para cervejas
+                artesanais, além de contar com a avaliação e sugestões dos sommeliers para cada consumo. Assim
+                atendendo um mercado específico e com ampla oportunidade de negócio..</p><br><br>
+
+            <h4 id="metodologia">2 – MÉTODOLOGIA</h4><br><br>
+            <h4 id="visao">&emsp;2.1 – Visão Geral do Brejart - Análises de Funcionalidades. (UX Design)</h4><br>
+
+            <p> &emsp;No processo de identificação da viabilidade do aplicativo Brejart foi realizada uma pesquisa
+                objetiva com os possíveis usuários do aplicativo, com o intuito de facilitar a identificação das
+                possíveis necessidades e atrativos para os clientes desse mercado, para que assim, a Brejart
+                conseguisse cumprir seu principal objetivo, trazer uma solução simples e rápida para aqueles que,
+                como nós, são apaixonados por cervejas artesanais. Na elaboração da pesquisa se utilizou a plataforma
+                Microsoft forms como ferramenta para a criação de formulários e para a divulgação utilizamos diversos
+                meios digitais como grupos de WhatsApp, Facebook etc., a pesquisa ficou disponível de 26/03/2021 até
+                21/04/2021 e foram entrevistadas 156 pessoas.<br>
+                &emsp;Como resultado da pesquisa foi possível identificar uma grande ascensão do delivery, já que
+                78% dos entrevistados optam por um aplicativo de entrega, tanto de alimentos como de bebidas,
+                ao invés das compras convencionais.</p><br><br>
+
+            <p>  &emsp;Um segundo objetivo foi identificar as funcionalidades ou principal motivador que mais atrai
+                 a atenção dos usuários. Os resultados podem ser observados no gráfico da figura 1.</p><br>                        
+                 
+            <p><center> <img src="img/figura1.jpg" alt="HTML5 Icon" style=" align:center; width:600px; height:150px;"></center></p>
+            <p style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">Figura 1: Funções identificadas como as mais relevantes</p><br>
+
+            <p> &emsp;O resultado (figura 1) evidencio, que 50% dos entrevistados justificam suas escolhas por apps que
+                oferecem Promoções, 18% cardápios com preços mais atrativos e menor tempo de entrega. </p><br><br><br>
+
+
+            
+            <p> &emsp;Variáveis econômicas podem ser por muitas vezes fatores determinantes no acesso a
+                ferramentas e aplicativos mobile, sendo assim foram incluídas algumas questões
+                relacionadas à renda familiar e sua relação com o consumo através de aplicativos
+                de delivery. O resultado é apresentado no gráfico na figura 2.</p><br>
+
+            <p><center> <img src="img/figura2.jpg" alt="HTML5 Icon" style=" align:center; width:600px; height:150px;"></center></p>
+            <p style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">Figura 2: Identificações da renda</p><br>
+
+            <p> &emsp;Como mostrado no gráfico da figura 2, nota-se que 46% dos entrevistados possuem renda
+                familiar de até 3 salários-mínimos, e são considerados com classe média baixa. Considerando o 
+                total dos entrevistados apenas 38% podem-se considerar de classe média. O que pode
+                comprometer o consumo de cervejas artesanais, dependendo de quanto do orçamento for comprometido.</p><br><br><br>
+
+                
+
+            <p> No gráfico na figura 3 se inclui uma visão sobre a extensão do mercado de aplicativos de delivery para comida ou bebida.</p><br>
+
+            <p><center> <img src="img/figura3.jpg" alt="HTML5 Icon" style=" align:center; width:600px; height:150px;"></center></p>
+            <p style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">Figura 3: Identificação do público que utiliza app delivery</p><br>
+
+            <p> &emsp;Com resultado, gráfico da figura 3, é possível concluir que os apps de delivery “caíram no 
+                colo” dos consumidores devido a sua praticidade e conforto na hora de pedir um alimento ou uma
+                bebida, assim trazendo mais conforto ao usuário, mesmo com o advento da pandemia do Covid-19.</p><br><br><br>
+
+            <p> &emsp;Finalmente, os resultados apresentados nos gráficos acima é possível concluir que o mercado
+                de cervejas artesanais é um nicho específico, onde o público alvo e possivelmente novos clientes,
+                devem ser atraídos e fidelizados por estratégias de marketing digital mais eficazes, como 
+                promoções,  cupons de descontos, frete grátis, novidades no mercado cervejeiro, opinião de
+                influenciadores digitais e especialistas no assunto, personalização de entregadores e veículos (o
+                que gera maior confiança e desperta o interesse), apresentações e propagandas em mídias sociais
+                diversas como instagram, facebook, twitter, etc. e acima de tudo, conhecer melhor as necessidades
+                de cada cliente, para que a experiência se torne algo único. </p><br><br>
+
+                <h4 id="desenvolvimento">3 – DESENVOLVIMENTO</h4><br><br>
+                <h4 id="arquitetura">&emsp;3.1 – Arquitetura do aplicativo Brejart</h4><br>
+
+            <p> &emsp;O aplicativo Brejart é projetado na sua primeira versão para trabalhar em dispositivos com o
+                Sistema Operacional Windows e IOS, com uma ferramenta web para fins de administração. Uma versão
+                simplificada da arquitetura do Brejart pode ser observada na figura 4.</p><br><br>
+
+
+                <p><center> <img src="img/figura4.jpg" alt="HTML5 Icon" style=" align:center; width:600px; height:150px;"></center></p>
+                <p style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">Figura 4: Arquitetura</p><br>
+
+            <p> &emsp;A camada de dados (camada 1) é composta por uma estrutura de banco de dados (BD)
+                relacional SQLite, a escolha se deve a um melhor desempenho deste tipo de BD em aplicações
+                para dispositivos móveis. A (camada 2) da aplicação é dividida em três módulos; o primeiro
+                de localização, que é projetado utilizando a API do Google para satisfazer as demandas do
+                aplicativo. Futuramente pretendemos incorporar a Rest API, que facilitará a comunicação
+                entre uma aplicação Back-end e Front-end, sendo essencial para o desenvolvimento de 
+                aplicações multiplataformas. E no terceiro a ferramenta de inteligência artificial, para
+                automação de ações na plataforma, realizando levantamento dos tipos de serviço mais
+                solicitados, gráficos e classificações de análises contínuas da plataforma. E na (camada 3)
+                de interface do usuário foi utilizado a linguagem de marcação HTML, linguagem de estilo CSS
+                e a linguagem de programação Javascript devido suas soluções para os mais variados tipos de
+                problemas, sejam eles web ou mobile. Além disso, é uma ferramenta multiplataforma independente,
+                que pode ser aplicada aos sistemas operacionais Windows, macOS e Linux. Esta camada contém 5
+                módulos, são eles: Cadastro, Vendas, Pagamento, Catálogos e Rastreamento.  </p><br><br>
+
+                <h4 id="Funcionalidade">&emsp;3.2 – Funcionalidade do Brejart</h4><br>
+                
+
+            <p> O Brejart é um aplicativo web voltado a serviços de delivery de cerveja artesanais, projetado para
+                operar, na sua primeira versão, em dispositivos com o sistema operacional Windows e IOS. A primeira
+                versão a ser disponibilizada,  apresenta a função de “dicas e sugestões de Sommeliers” especialistas
+                em cervejas artesanais, o que permite ao usuário melhorar a sua escolha de produto, outra funcionalidade
+                é a de rastreamento de pedidos e entregas em tempo real. 
+                O Brejart é dividido em 5 módulos funcionais, descritos a seguir:
+                  </p><br><br>
+
+
+
+                <table border="1px"  cellspacing="2"  style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">
+
+                <caption><b>Tabela 2: Módulo de Cadastro</b> </caption>
+
+                <tr > 
+                    <th> Códigos referência</th> <th> Cadastro de Clientes  </th>
+                </tr>
+
+                <tr > 
+                    <th > RF0001 </th> <td> 1 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0002 </th> <td> 2 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0003 </th> <td> 3 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0004 </th> <td> 4 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0005 </th> <td> 5 </td> 
+                </tr>
+
+                <tr > 
+                    <th> Códigos referência</th> <th> Cadastro de Lojas    </th>
+                </tr>
+                <tr > 
+                    <th > RF0006 </th> <td> 6 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0007 </th> <td> 7 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0008 </th> <td> 8 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0009 </th> <td> 9 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0010 </th> <td> 10 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0011 </th> <td> 11 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0012 </th> <td> 12 </td> 
+                </tr>
+                <tr > 
+                    <th> Códigos referência</th> <th> Cadastro de Produtos</th>
+                </tr>
+                <tr > 
+                    <th > RF0013 </th> <td> 13 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0014 </th> <td> 14 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0015 </th> <td> 15 </td> 
+                </tr>
+                <tr > 
+                    <th > RF0016 </th> <td> 16 </td> 
+                </tr>
+                </table><br>
+
+                <p> Na tabela 2 encontra-se os módulos de cadastro do sistema que envolvem: cadastro dos clientes,
+                    lojas e produtos. Em todos eles pode se incluir, editar ou atualizar e remover clientes, lojas e
+                    produtos. No campo Loja será possível o cadastro dos usuários da própria. </p><br><br><br>
+
+                    <table border="1px"  cellspacing="2"  style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">
+
+                        <caption><b>Tabela 3: Módulo de Vendas</b> </caption>
+
+                        <tr > 
+                            <th> Códigos referência</th> <th> Loja   </th>
+                        </tr>
+
+                        <tr > 
+                            <th > RF0017 </th> <td> 17 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0018 </th> <td> 18 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0019 </th> <td> 19 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0020 </th> <td> 20 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0021 </th> <td> 21 </td> 
+                        </tr>
+                    </table><br>
+
+                    <p>Na tabela 3 encontra o módulo de vendas onde as lojas gerenciam o recebimento, aceite, edição, confirmação de pagamentos e envio dos pedidos. </p><br><br><br>
+
+                    <table border="1px"  cellspacing="2"  style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">
+
+                        <caption><b>Tabela 4: Módulo de Pagamento</b></caption>
+
+                        <tr > 
+                            <th> Códigos referência</th> <th>Pagamento</th>
+                        </tr>
+
+                        <tr > 
+                            <th > RF0022 </th> <td> 22 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0023 </th> <td> 23 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0024 </th> <td> 24 </td> 
+                        </tr>
+                       
+                    </table><br>
+
+                    <p>Na tabela 4 temos o módulo de pagamento, onde o cliente escolhe a forma de pagamento disponibilizado e gera a nota fiscal. </p><br><br><br>
+
+                    <table border="1px"  cellspacing="2"  style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">
+
+                        <caption><b>Tabela 5: módulo de Catálogos</b></caption>
+
+                        <tr > 
+                            <th> Códigos referência</th> <th>Catálogos </th>
+                        </tr>
+
+                        <tr > 
+                            <th > RF0025 </th> <td> 25 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0026 </th> <td> 26 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0027 </th> <td> 27 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0028 </th> <td> 28 </td> 
+                        </tr>
+                    </table><br>
+
+                    <p>Na tabela 5 temos o módulo dos catálogos das lojas, onde será possível incluir, atualizar e filtrar os produtos. </p><br><br><br>
+
+                    <table border="1px"  cellspacing="2"  style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">
+
+                        <caption><b>Tabela 6: Módulo de Rastreamento</b></caption>
+
+                        <tr > 
+                            <th> Códigos referência</th> <th>Geolocalização  </th>
+                        </tr>
+
+                        <tr > 
+                            <th > RF0029 </th> <td> 29 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0030 </th> <td> 30 </td> 
+                        </tr>
+                        <tr > 
+                            <th > RF0031 </th> <td> 31 </td> 
+                        </tr>
+                    </table><br>
+
+                    <p>Na tabela 6 encontramos o módulo de rastreio, onde é possível localizar o pedido e monitorar o entregador. </p><br><br>
+
+                    <h4 id="cores">&emsp;3.3 – Psicologia das cores (logotipo e design)</h4><br>
+
+                    <p>&emsp;A psicologia das cores, um conceito importante para o designer, é um estudo que foca na interação
+                        das tonalidades com o destinatário, ou seja, entender como uma determinada cor pode afetar a
+                        percepção de uma pessoa sobre um produto ou serviço. (Simões, 2018) [7].<br><br>
+                        A Brejart leva em seu logo o símbolo de um brinde entre uma garrafa long-neck e um copo de cerveja,
+                        representando o ato mais simplório de um momento feliz, o brinde. A Brejart, assim como todos os
+                        seus consumidores têm uma paixão em comum: cerveja, seja lá se sua preferência for beber na garrafa,
+                        no copo ou na lata.<br> <br>
+                        No logo do app pode-se destacar suas duas principais cores, o laranja e o amarelo, cores quentes que
+                        representam o calor de um bom momento apreciando uma cerveja artesanal de qualidade, com preço justo
+                        e entrega rápida. <br><br>
+                        E segundo Mayumi (2019) [8] o laranja em sua essência representa motivação, calor, diversão, alimento,
+                        conforto e liberdade. é a cor da positividade e desejo em degustar cerveja artesanal de todos os tipos,
+                        já o amarelo representa o otimismo, a alegria e a amizade, mas principalmente a alegria de compartilhar
+                        bons momentos com segurança, seja entre amigos, família ou parceiros.</p><br><br>                                
+
+
+                    <h4 id="Tela">&emsp;3.4 – Tela principal e módulos de destaque (UI Design)</h4><br>
+
+                    <p style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">Figura 6: Protótipo Mobile </p>
+                    <p><center> <img src="img/figura6.jpg" alt="HTML5 Icon" style=" align:center; width:600px; height:900px;"></center></p>
+                    <p style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">Fonte: Autores (2021)</p><br><br><br>
+
+                    <h4 id="Fluxograma">4 – Fluxograma de atividade</h4><br>
+
+                    <p style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">Figura 5: Fluxograma de atividade</p>
+                    <p><center> <img src="img/figura5.jpg" alt="HTML5 Icon" style=" align:center; width:600px; height:900px;"></center></p>
+                    <p style="margin-left:9px; margin-right:9px; text-align: center; font:13px arial;margin: 0 auto; ">Fonte: Autores (2021)</p><br>
+
+
+                    <h4 id="Conclusão">5 – Conclusão</h4><br>
+
+                    <p> Concluímos nesse projeto, que a pesquisa direta ao público é um fator
+                        determinante para a aceitação do aplicativo. Para tal, apontamos a importância
+                        do design UX/UI, quanto mais a interface for ágil e amigável melhor. Afinal ter a
+                        visão do usuário, que é quem irá usar o aplicativo é fundamental para todo o 
+                        processo de desenvolvimento.<br>
+                        Podemos avaliar essa resposta com a prototipagem do aplicativo de delivery da
+                        Brejart. Onde foram registradas a distribuição e interatividade de cada tela, suas
+                        funções e descrição, além da psicologia das cores aplicadas no logo da empresa
+                        e dentro do app. Incluindo a logística para o delivery, usando os recursos mais
+                        modernos de geolocalização disponíveis, o que agregará um diferencial maior
+                        para os usuários do app. <br>
+                        Todas as pesquisas realizadas para a fundamentação teórica envolvida no
+                        projeto, abriram portas para novas linhas de desenvolvimento tecnológico, além
+                        do conhecimento agregado para os autores desse trabalho. Todos os dados
+                        apresentados também servirão de base para outros alunos, pesquisadores e
+                        quem sabe futuros empreendedores dentro e fora da universidade. As
+                        possibilidades são inúmeras. <br>
+                        Com base nos resultados apresentados nesse projeto e tendo em vista os
+                        desafios do cenário comercial atual no Brasil, a criação e desenvolvimento do
+                        app Brejart é possível. O que valida o objetivo proposto. Porém, o mesmo ainda
+                        carece de mais pesquisas entre o público-alvo, de forma que a experiência e
+                        integração do usuário possam ser maximizadas. A viabilidade do aplicativo vai
+                        depender disso. Ou seja, antes de investir tempo e recursos financeiros na
+                        criação do app é necessário avaliar a necessidade e adesão do consumidor.
+                        </p><br><br><br>
+
+                        <h4 id="referencia">Referência</h4><br>
+
+                        <p>[1] CERVEJA, G. D. Qual o impacto do coronavírus no mercado cervejeiro? 14 marcas analisam. Disponível em: https://guiadacervejabr.com/impacto-crise-covid19-cervejarias. Acesso em: 19 Abril 2021.<br><br>
+
+                        [2] FREITAS, C. F. Os canais de distribuição do mercado de cerveja estão sendo reconfigurados. Disponível em: https://catalisi.com.br/canais-de-distribuicao-do-mercado-de-cerveja-estao-sendo-reconfigurados. Acesso em: 19 Abril 2021.<br><br>
+
+                        [3] IBND, RH, Ifood. Disponível em: https://www.ibnd.com.br/blog/conheca-a-historia-do-ifood-maior-especialista-em-food-tech-do-brasil.html/.  Acessado em: 13 de Setembro de 2021.<br><br>
+
+                        [4] Drsk, SM. Rappi. Disponível em: https://neofeed.com.br/blog/home/o-chamado-de-sebastian-mejia-fundador-da-rappi-para-os-empreendedores-da-al/. Acessado em: 10 de Setembro de 2021.<br><br>
+
+                        [5] GUSTAVO, Luiz, LGP, Uber Eats. Disponível em : https://www.meioemensagem.com.br/home/marketing/2020/09/25/uber-eats-como-construir-uma-marca-derivada.html/ Acessado em: 13 de Setembro de 2021.<br><br>
+
+                        [6] Machine, LM. Zé Delivery. Disponível em: https://machine.global/zedelivery/. Acessado em: 10 de Setembro de 2021. <br><br>
+                        
+                        [7] SIMÕES, Leticia. Psicologia das cores: veja como isso é essencial para o sucesso do designer. Disponível em: https://www.alura.com.br/artigos/psicologia-das-cores-veja-como-isso-e-essencial-para-o-sucesso-do-designer/. Acessado em: 12 de abril de 2022.<br><br>
+
+                        [8] MAYUMI, Fernanda. Psicologia das Cores: a Influência e Impacto de cada Cor na sua Marca. Disponível em: https://www.des1gnon.com/2019/04/psicologia-das-cores/. Acessado em: 12 de abril de 2022</p>
+                        
+                                 
+ </div>
+
+<!--
+    <div id="lado">
+
+       
+        
+    </div>
+
+
+    
+    <div id="rodape">
+        Análise e Desenvolvimento de Sistemas 5° semestre
+    </div>
+-->
+        
+ 
+
+    
+</main>
+
+
+</body>
+</html>
