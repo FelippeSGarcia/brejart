@@ -1,4 +1,4 @@
-*{
+ *{
         margin: 0;
         padding: 0;  
         }
@@ -26,13 +26,7 @@
             background: #23232e;
             height: 8vh;
         }
-
-        main {
-            background: url(img/fundo.jpg) no-repeat center center;
-            background-size: cover;
-            height: 92vh;
-        }
-
+        
         .nav-list{
             list-style: none;
             display: flex;
@@ -55,7 +49,7 @@
             margin: 8px;
         }
 
-        @media (max-width: 999px){
+        @media (max-width: 990px){
 
             body {
                 overflow-x: hidden;
@@ -87,83 +81,70 @@
         body{
             font-family: Arial;
             font-size: 15px;
+         
+            
 }
-        #cabecalho{
-            height: 150px;
-            background-color:rgba(255, 187, 0, 0);
-            width: 76%;
-            margin: 0 auto;
 
-            @media screen and (max-width: 768px)  {
-                cabecalho{ width: 100%}
-            }
-       
-        }
+main {
+    background: url(img/fundo.jpg) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+h1{
+    font-family: arial;
+    font-size: 16pt;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h5{
+
+ margin-left:9px;
+ margin-right:9px;
+ 
+}
+
+p{
+    text-align: justify;
+    font-size: 17px;
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+
+        /* Lateral Esquerda*/
         #menu{
             height: 700px;
-            width: 220px;
+            width: 320px;
             background-color: rgba(255, 0, 0, 0);
             float: left;
             margin-top: 10px;
-            margin-left: 230px;
+            margin-left: 10px;
             font-family: Arial;
             font-size: 14px;
             color: black;
 
 
-
-
-            @media screen and (max-width: 768px)  {
-                menu{ width: 100%
-                      padding: 0;  
-                }
-            }
+           
                    
         }
+
+    
+         
         #principal{
             height: 700px;
-            width: 950px;
+            width: 990px;
             background-color: rgba(255, 0, 0, 0);
             float: left;
             margin-top: 10px;
             margin-left: 10px;
-          
-
-            @media screen and (max-width: 768px)  {
-                principal{ width: 100%
-                           padding: 0;}
-            }
-            
-        }
-        #lado{
-            height: 700px;
-            width: 351px;
-            background-color: rgba(255, 0, 0, 0);
-            float: left;
-            margin-top: 10px;
-            margin-left: 50px;
-            margin-block-end: 10px;
-            font-family: Arial;
-            font-size: 14px;
-            
-            
-
-            @media screen and (max-width: 768px)  {
-                lado{ width: 100%
-                      padding: 0;}
-            }
-        }
-       /*
-        #rodape{
-            height: 50px;
-            background-color:red;
-            width: 76%;
-            margin: 0 auto;       
-            clear: both;
-
-            @media screen and (max-width: 768px)  {
-                rodape{ width: 100%
-                         padding: 0;}
-            }
+            overflow: auto;
            
-        }*/
+        }
+
+        
+        #principal::-webkit-scrollbar {
+            display:none;
+        }
